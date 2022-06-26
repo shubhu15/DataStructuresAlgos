@@ -1,6 +1,7 @@
-package Array.Recursion;
+package Array.LeetCodeQuestions.Basic;
 
 class RunningArraySum {
+
 //    https://leetcode.com/problems/running-sum-of-1d-array/submissions/
     public static void main(String[] args) {
         RunningArraySum rm = new RunningArraySum ();
@@ -26,6 +27,24 @@ class RunningArraySum {
             return;
         sum(nums,s-1);
         nums[s] +=nums[s-1];
+
+    }
+
+//    other solution with recursion
+    public int[] runningSum2(int[] nums) {
+
+
+        runningSumHelper(nums, 1);
+
+        return nums;
+    }
+
+    public void  runningSumHelper(int[] nums,int i){
+        if(i==nums.length)
+            return ;
+        nums[i] = nums[i-1]+nums[i];
+        runningSumHelper(nums, i+1);
+
 
     }
 

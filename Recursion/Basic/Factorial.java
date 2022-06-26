@@ -1,4 +1,4 @@
-package Array.Recursion;
+package Recursion.Basic;
 
 public class Factorial {
 

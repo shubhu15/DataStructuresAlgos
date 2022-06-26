@@ -1,4 +1,4 @@
-package Array.Basic;
+package Array.LeetCodeQuestions.Basic;
 
 import java.util.HashMap;
 
