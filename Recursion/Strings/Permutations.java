@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Permutations {
 
     public static void main(String[] args) {
-//        permutationString("","abc");
-        System.out.println(permutationString2("","abc"));
+        permutationString("","abc");
+//        System.out.println(permutationString2("","abc"));
     }
 
     static void permutationString(String p, String up) {

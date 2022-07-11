@@ -41,7 +41,7 @@ public class AllAnagramsInString {
                 if(count ==0)
                     ans.add(i);
                 if(hm.containsKey(s.charAt(i))){
-                    int c = (int)hm.get(s.charAt(i));
+                    int c = hm.get(s.charAt(i));
                     c +=1;
                     hm.put(s.charAt(i), c);
                     if(c==1)

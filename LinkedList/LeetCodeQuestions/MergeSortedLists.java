@@ -40,6 +40,6 @@ public class MergeSortedLists {
 
 
 
-        return head.next;
+        return head.next; //  IMPORTANT
     }
 }

@@ -6,6 +6,8 @@ import java.util.Map;
 
 public class IsIsomorphic {
 
+    // CHECK THE OPTIMAL APPROACH ??
+
 //    https://leetcode.com/problems/isomorphic-strings/
     public boolean isIsomorphic(String s, String t) {
         int n = s.length(); int m = t.length();

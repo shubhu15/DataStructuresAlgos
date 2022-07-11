@@ -19,7 +19,7 @@ public class TransposeMatrix {
         int n = matrix.length;
 
         for (int i=0; i<n; i++) {
-            for (int j=i+1; j<n; j++) { // to avoid swapping twice
+            for (int j=i+1; j<n; j++) { // to avoid swapping twice and "+1" is there since we can skip the diagonals as well
                 int temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = temp;

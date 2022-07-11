@@ -19,7 +19,7 @@ public class FirstNegativeIntegerWindowK {
         int j =0;
         int k =0;
         int size = A.length;
-        long[] ans = new long[size -K +1 ];
+        long[] ans = new long[size -K +1 ]; // IMPORTANT
 
         List<Long> temp = new ArrayList<>();
 
