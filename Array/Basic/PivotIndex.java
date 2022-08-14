@@ -1,4 +1,4 @@
-package Array.LeetCodeQuestions.Basic;
+package Array.Basic;
 
 public class PivotIndex {
 

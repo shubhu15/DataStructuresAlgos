@@ -1,4 +1,4 @@
-package Array.LeetCodeQuestions.Array2D;
+package Array.Array2D;
 
 public class SetMatrixZeros {
 
