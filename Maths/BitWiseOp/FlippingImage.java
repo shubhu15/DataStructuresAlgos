@@ -1,25 +1,30 @@
 package Maths.BitWiseOp;
 
 public class FlippingImage {
+
+//    https://leetcode.com/problems/flipping-an-image/
 // 1. flip each row 2. invert the image
     public static void main(String[] args) {
 
     }
-    int[][] flipInvert(int[][] a){
+    public int[][] flipAndInvertImage(int[][] image) {
+        int n = image.length;
 
-        for(int[] r:a){
-            int i =0;
-            int j =a.length-1;
-            while (i<=j){
-                int temp =r[i] ^ 1;
-                r[i] =r[j] ^1;
-                r[j]=temp;
-                i++;
-                j--;
+
+        for(int i =0; i<n;i++){
+
+            int j=0,k=image[i].length-1;
+            while(j<=k){
+
+                int temp = image[i][j] ^ 1;
+                image[i][j] = image[i][k] ^ 1;
+                image[i][k] = temp;
+                j++;k--;
             }
 
         }
-        return a;
+
+        return image;
     }
 
     private void reverse(int[] a) {

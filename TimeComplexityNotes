@@ -1,0 +1,45 @@
+1. In asymptotic analysis we consider growth of algorithm in terms of input size.
+An algorithm X is said to be asymptotically better than Y if X takes smaller time than y for all
+input sizes n larger than a value n0 where n0 > 0.
+
+2. int searchNumOccurrence(vector<int> &V, int k, int start, int end) {
+       if (start > end) return 0;
+       int mid = (start + end) / 2;
+       if (V[mid] < k) return searchNumOccurrence(V, k, mid + 1, end);
+       if (V[mid] > k) return searchNumOccurrence(V, k, start, mid - 1);
+       return searchNumOccurrence(V, k, start, mid - 1) + 1 + searchNumOccurrence(V, k, mid + 1, end);
+   }
+
+   ans - O(n)
+
+3. int findMinPath(vector<vector<int> > &V, int r, int c) {
+     int R = V.size();
+     int C = V[0].size();
+     if (r >= R || c >= C) return 100000000; // Infinity
+     if (r == R - 1 && c == C - 1) return 0;
+     return V[r][c] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1));
+   }
+
+   ans = O(2^(R + C))
+
+
+4.  int count = 0;
+           for (int i = N; i > 0; i /= 2) {
+               for (int j = 0; j < i; j++) {
+                   count += 1;
+               }
+           }
+
+           ans = O(n)
+
+
+5. int j = 0;
+           for(int i = 0; i < n; ++i) {
+               while(j < n && arr[i] < arr[j]) {
+                   j++;
+               }
+           }
+
+           In the first look, the time complexity seems to be O(n^2) due to two loops.
+
+           However, note that the variable j is not initialized for each value of variable i.
