@@ -1,4 +1,4 @@
-package Array.Basic;
+package Array.Medium;
 
 public class MaximumSubarray {
 

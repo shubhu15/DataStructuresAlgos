@@ -10,6 +10,8 @@ public class SmallestCharGreaterTarget {
         int end = letters.length-1;
 
         while(start<=end){
+
+            // IMPORTANT CONDITION FOR LAST ELEMENT
             if(target>= letters[letters.length-1]) // wrap around to the first element
                 return letters[0];
 
