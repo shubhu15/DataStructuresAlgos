@@ -1,4 +1,4 @@
-package LinkedList.LeetCodeQuestions;
+package LinkedList.Easy;
 
 public class MiddleOfLinkedList {
 

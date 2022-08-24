@@ -1,4 +1,4 @@
-package LinkedList.LeetCodeQuestions;
+package LinkedList.Medium;
 
 public class LinkedListCycle2 {
 

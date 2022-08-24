@@ -1,7 +1,5 @@
 package LinkedList;
 
-import LinkedList.LeetCodeQuestions.LinkedListCycle;
-
 public class ListNode {
 
     public int val;

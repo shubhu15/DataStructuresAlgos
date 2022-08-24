@@ -1,4 +1,4 @@
-package Search.LeetCodeQuestions;
+package Search.LeetCodeQuestions.Medium;
 
 public class SearchInRotatedSortedArray {
 

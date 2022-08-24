@@ -1,4 +1,4 @@
-package LinkedList.LeetCodeQuestions;
+package LinkedList.Easy;
 
 import LinkedList.ListNode;
 
@@ -24,5 +24,25 @@ public class ReverseLinkedListInPlace {
         curr.next =prev;
 
         return curr;
+    }
+
+    public ListNode reverseList2(ListNode head) {
+
+        ListNode current = head;
+        if(head ==null)
+            return null;
+        ListNode nextNode = current.next;
+        ListNode prev = null;
+
+        while(current!=null){
+            current.next = prev;
+            prev = current;
+            current = nextNode;
+            if(nextNode!=null)
+                nextNode = nextNode.next;
+        }
+
+        return prev;
+
     }
 }

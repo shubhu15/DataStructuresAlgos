@@ -1,4 +1,4 @@
-package Search.LeetCodeQuestions;
+package Search.LeetCodeQuestions.Easy;
 
 public class SmallestCharGreaterTarget {
 

@@ -1,4 +1,4 @@
-package LinkedList.LeetCodeQuestions;
+package LinkedList.Easy;
 
 import LinkedList.ListNode;
 

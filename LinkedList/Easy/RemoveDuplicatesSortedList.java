@@ -1,4 +1,4 @@
-package LinkedList.LeetCodeQuestions;
+package LinkedList.Easy;
 
 public class RemoveDuplicatesSortedList {
 //    https://leetcode.com/problems/remove-duplicates-from-sorted-list/
