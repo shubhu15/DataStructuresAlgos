@@ -15,7 +15,7 @@ class Solution {
             hm.put(target-nums[i],i);
         }
 
-        return null;
+        return new int[]{-1,-1};
     }
 
     public static void main(String[] args) {

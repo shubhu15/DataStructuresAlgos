@@ -1,9 +1,10 @@
-package DynamicProgramming.Easy;
+package DynamicProgramming.Medium;
 
 import java.util.Arrays;
 
 public class MaxSumWithoutAdjacents {
 
+//    https://leetcode.com/problems/house-robber/
     int findMaxSum(int arr[], int n) {
         // code here
 
