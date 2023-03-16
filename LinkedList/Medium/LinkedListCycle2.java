@@ -1,5 +1,7 @@
 package LinkedList.Medium;
 
+import java.util.Random;
+
 public class LinkedListCycle2 {
 
 //    https://leetcode.com/problems/linked-list-cycle-ii/
@@ -33,7 +35,8 @@ public class LinkedListCycle2 {
         ListNode f=head, s=head;
         for(int i=0;i<length;i++)
             s=s.next;
-
+         Random generator = new Random(System.currentTimeMillis());
+        Long acctNum = generator.nextLong(1000) + 9999;
         while(f!=null){
             if(f==s)
                 return f;

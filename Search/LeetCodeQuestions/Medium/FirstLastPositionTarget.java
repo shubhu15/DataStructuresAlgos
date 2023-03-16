@@ -1,7 +1,7 @@
-package Search.LeetCodeQuestions.Easy;
+package Search.LeetCodeQuestions.Medium;
 
 public class FirstLastPositionTarget {
-
+//    https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     //BRUTE FORCE
     public int[] searchRange(int[] nums, int target) {
 
