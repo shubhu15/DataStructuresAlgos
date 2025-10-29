@@ -1,7 +1,9 @@
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        s= bin(n)[2:]
-        add = [ int(a) for a in s]
+        cnt =0
+        while n:
+            cnt += n&1
+            n>>=1
 
-        return sum(add)
+        return cnt
         
