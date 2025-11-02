@@ -8,21 +8,32 @@ class Solution:
 
         det = set(nums)
 
-        while head and head.val in det:
-            head= head.next
-        # for n in nums:
-        #     if n not in visited:
-        curr=head
+        # while head and head.val in det:
+        #     head= head.next
+        # # for n in nums:
+        # #     if n not in visited:
+        # curr=head
 
-        while curr and curr.next:
-            if curr.next.val in det:
-                curr.next= curr.next.next
-                
-            else:
-                curr= curr.next
+        def deleteNode():
+            dummy = ListNode()
+            dummy.next = head
+            curr= dummy.next
+            prev = dummy
 
+            while curr:
+                if curr.val in det:
+                    prev.next= curr.next
+                    curr= curr.next
+                    
+                else:
+                    prev=curr
+                    curr= curr.next
 
-        return head
+            return dummy.next
+
+        
+
+        return deleteNode()
 
         
 
