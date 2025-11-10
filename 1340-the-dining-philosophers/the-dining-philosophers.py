@@ -15,18 +15,18 @@ class DiningPhilosophers:
                    putLeftFork: 'Callable[[], None]',
                    putRightFork: 'Callable[[], None]') -> None:
 
-                   with self.sema:
-                    l= philosopher
-                    r= (philosopher +1) % 5
-                    self.lock[l].acquire()
-                    self.lock[r].acquire()
-                    pickLeftFork()
-                    pickRightFork()
-                    eat()
-                    putLeftFork()
-                    putRightFork()
-                    self.lock[l].release()
-                    self.lock[r].release()
+                #    with self.sema:
+                l= philosopher
+                r= (philosopher +1) % 5
+                self.lock[l].acquire()
+                self.lock[r].acquire()
+                pickLeftFork()
+                pickRightFork()
+                eat()
+                putLeftFork()
+                putRightFork()
+                self.lock[l].release()
+                self.lock[r].release()
                     
 
 
