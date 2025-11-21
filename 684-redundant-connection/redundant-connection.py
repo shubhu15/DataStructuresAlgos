@@ -34,8 +34,8 @@ class Solution:
             if uf.find(i)!= uf.find(j):
                 uf.union(i,j)
             else:
-                res.append((i,j))
+                return [i,j]
 
-        return res[-1]
+        return []
 
         
