@@ -1,21 +1,25 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
+        ns = set(s)
 
-        maxL=0
-        count ={}
-        max_f =0
-        i=0
-        for j in range(len(s)):
-            count[s[j]] = 1+ count.get(s[j], 0)
-            max_f = max(max_f, count[s[j]])
+        maxl =0
+        for i in ns:
+            cnt=0
+            l=0
+            for j, val in enumerate(s):
+                if val!=i:
+                    cnt+=1
+                
 
-            while j-i+1 - max_f >k:
-                count[s[i]]-=1
-                i+=1
+                while cnt >k:
+                    if s[l]!=i:
+                
+                        cnt-=1
+                    l+=1
+                maxl = max(maxl, j-l+1)
 
-            maxL = max(maxL, j-i+1)
-
-        return maxL
+        return maxl
 
 
-        
+
+                
