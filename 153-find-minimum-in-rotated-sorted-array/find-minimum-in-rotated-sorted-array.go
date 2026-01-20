@@ -5,17 +5,15 @@ func findMin(nums []int) int {
     ans:=nums[j]
 
     for i<=j {
-        if nums[i]< nums[j] {
-            return min(ans, nums[i])
-        }
+        
             
         mid:= i+ (j-i)/2
         ans = min(ans, nums[mid])
 
-        if nums[i]<=nums[mid] {
-            i= mid+1
+        if nums[j]>nums[mid] {
+            j= mid-1
         } else {
-            j=mid-1
+            i=mid+1
         }
     }
 
